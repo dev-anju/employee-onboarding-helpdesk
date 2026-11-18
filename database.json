@@ -1,0 +1,298 @@
+{
+  "records": [
+    {
+      "ritm": "RITM0010049",
+      "type": "Onboarding",
+      "reqName": "Onboard: ankit",
+      "requestedBy": "System Admin",
+      "department": "Marketing",
+      "costCenter": "CC-3021 (Sales)",
+      "startDate": "2026-11-20",
+      "state": "Closed Complete",
+      "stage": "Completed",
+      "priority": "2 - High",
+      "date": "2026-11-18",
+      "variables": {
+        "hireName": "ankit",
+        "jobTitle": "QA",
+        "department": "Marketing",
+        "startDate": "2026-11-20",
+        "employmentType": "Contractor (C2C)",
+        "workModel": "On-site (Austin Technology Hub)",
+        "costCenter": "CC-3021 (Sales)",
+        "manager": "Battula Anjali",
+        "hardwareProfile": "Executive Ultrabook (Lenovo ThinkPad X1 Carbon)",
+        "peripherals": [
+          "External Monitor (27\" 4K)",
+          "Ergonomic Keyboard & Mouse"
+        ],
+        "softwareAccess": [
+          "ServiceNow",
+          "AWS Production",
+          "GitHub Enterprise",
+          "Slack"
+        ],
+        "securityClearance": "Level 2 (Server Room & Prod VPC)",
+        "shippingAddress": "100 Silicon Way, San Francisco, CA",
+        "requestedBy": "System Admin"
+      },
+      "slas": [
+        {
+          "id": "SLA-1794976735745",
+          "name": "Approval SLA",
+          "target": "24 Hours",
+          "elapsed": 5,
+          "status": "In Progress",
+          "breached": false,
+          "timeRemaining": "23h remaining"
+        }
+      ],
+      "activityStream": [
+        {
+          "id": 1794976735745,
+          "type": "system",
+          "author": "System Engine",
+          "text": "Onboarding requested for ankit",
+          "time": "Just now"
+        },
+        {
+          "id": 1794976741576,
+          "type": "approval",
+          "author": "System Admin (Battula Anjali)",
+          "text": "Request Approved.",
+          "time": "Just now"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "SCTASK00309",
+          "group": "HR Support",
+          "assignedTo": "Unassigned",
+          "shortDesc": "Verify I-9 & Documents",
+          "state": "Closed Complete",
+          "checklist": [
+            {
+              "id": "c1",
+              "label": "Verify I-9",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "SCTASK003010",
+          "group": "IT Fulfillment",
+          "assignedTo": "Unassigned",
+          "shortDesc": "Provision AD & Hardware",
+          "state": "Closed Complete",
+          "dependency": "SCTASK00309",
+          "checklist": [
+            {
+              "id": "c2",
+              "label": "Setup Laptop",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ritm": "RITM0010042",
+      "type": "Onboarding",
+      "reqName": "Onboard: Ravi Kumar",
+      "requestedBy": "Anjali B.",
+      "department": "Information Technology",
+      "costCenter": "CC-4092 (IT Ops)",
+      "startDate": "2026-11-10",
+      "state": "Work in Progress",
+      "stage": "Fulfillment",
+      "priority": "2 - High",
+      "date": "2026-10-30",
+      "variables": {
+        "hireName": "Ravi Kumar",
+        "jobTitle": "Senior Cloud Engineer",
+        "corporateEmail": "ravi.kumar@enterprise.com",
+        "employeeId": "EMP-9042",
+        "hardwareProfile": "Developer Workstation (MacBook Pro M3 Max)"
+      },
+      "slas": [
+        {
+          "id": "SLA-101",
+          "name": "Manager Approval SLA",
+          "target": "24 Hours",
+          "elapsed": 100,
+          "status": "Completed",
+          "breached": false,
+          "timeRemaining": "Completed on time"
+        }
+      ],
+      "activityStream": [
+        {
+          "id": 1,
+          "type": "system",
+          "author": "System Engine",
+          "text": "Onboarding initiated.",
+          "time": "09:00 AM"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "SCTASK00201",
+          "group": "HR Support",
+          "assignedTo": "Priya Sharma",
+          "shortDesc": "Verify I-9 and Tax Documents",
+          "state": "Closed Complete",
+          "checklist": [
+            {
+              "id": "c1",
+              "label": "Verify Form I-9",
+              "done": true
+            }
+          ]
+        },
+        {
+          "id": "SCTASK00202",
+          "group": "IT Fulfillment",
+          "assignedTo": "Alex Mercer",
+          "shortDesc": "Provision AD Account & Hardware",
+          "state": "Work in Progress",
+          "dependency": "SCTASK00201",
+          "checklist": [
+            {
+              "id": "c2",
+              "label": "Create Active Directory User",
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ritm": "RITM0010043",
+      "type": "Onboarding",
+      "reqName": "Onboard: Sneha Reddy",
+      "requestedBy": "Anjali B.",
+      "department": "Marketing",
+      "costCenter": "CC-3021 (Mktg)",
+      "startDate": "2026-11-15",
+      "state": "Work in Progress",
+      "stage": "Fulfillment",
+      "priority": "2 - High",
+      "date": "2026-10-30",
+      "variables": {
+        "hireName": "Sneha Reddy",
+        "jobTitle": "Marketing Lead",
+        "corporateEmail": "sneha.reddy@enterprise.com"
+      },
+      "slas": [
+        {
+          "id": "SLA-104",
+          "name": "Manager Approval SLA",
+          "target": "24 Hours",
+          "elapsed": 40,
+          "status": "In Progress",
+          "breached": false,
+          "timeRemaining": "14h remaining"
+        }
+      ],
+      "activityStream": [
+        {
+          "id": 1,
+          "type": "system",
+          "author": "System Engine",
+          "text": "Awaiting manager approval.",
+          "time": "11:15 AM"
+        },
+        {
+          "id": 1794977189233,
+          "type": "approval",
+          "author": "Hiring Manager (Battula Anjali)",
+          "text": "Request Approved.",
+          "time": "Just now"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "SCTASK00204",
+          "group": "HR Support",
+          "assignedTo": "Unassigned",
+          "shortDesc": "Verify I-9 and Tax Documents",
+          "state": "Open",
+          "checklist": [
+            {
+              "id": "c3",
+              "label": "Form I-9",
+              "done": false
+            }
+          ]
+        },
+        {
+          "id": "SCTASK00205",
+          "group": "IT Fulfillment",
+          "assignedTo": "Unassigned",
+          "shortDesc": "Provision AD Account & Hardware",
+          "state": "Open",
+          "dependency": "SCTASK00204",
+          "checklist": [
+            {
+              "id": "c4",
+              "label": "Laptop Prep",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ritm": "RITM0010044",
+      "type": "Hardware",
+      "reqName": "Hardware: External Monitor",
+      "requestedBy": "System Admin",
+      "department": "Information Technology",
+      "costCenter": "CC-4092 (IT Ops)",
+      "startDate": "N/A",
+      "state": "Work in Progress",
+      "stage": "Fulfillment",
+      "priority": "3 - Moderate",
+      "date": "2026-10-30",
+      "variables": {
+        "item": "External Monitor (27\" 4K)"
+      },
+      "slas": [
+        {
+          "id": "SLA-106",
+          "name": "Hardware Dispatch SLA",
+          "target": "72 Hours",
+          "elapsed": 55,
+          "status": "In Progress",
+          "breached": false,
+          "timeRemaining": "24h remaining"
+        }
+      ],
+      "activityStream": [
+        {
+          "id": 1,
+          "type": "system",
+          "author": "System Engine",
+          "text": "Hardware request approved.",
+          "time": "08:30 AM"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "SCTASK00206",
+          "group": "IT Fulfillment",
+          "assignedTo": "Alex Mercer",
+          "shortDesc": "Procure and Dispatch Monitor",
+          "state": "Open",
+          "checklist": [
+            {
+              "id": "c5",
+              "label": "Test Cable & Dispatch",
+              "done": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
